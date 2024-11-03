@@ -1,0 +1,308 @@
+{
+  "sprintbacklog": [
+    {
+      "id": 1,
+      "title": "Sprint 1",
+      "goal": "Implementación de la funcionalidad básica",
+      "startDate": "2024-10-01",
+      "endDate": "2024-10-15",
+      "status": "started"
+    },
+    {
+      "id": 2,
+      "title": "Sprint 2",
+      "goal": "Integración con APIs externas",
+      "startDate": "2024-10-16",
+      "endDate": "2024-10-30",
+      "status": "ended"
+    }
+  ],
+  "userStories": [
+    {
+      "id": 1,
+      "title": "Como usuario, quiero registrarme en la aplicación",
+      "description": "Necesito un formulario de registro para crear una cuenta en la aplicación.",
+      "status": "to_do",
+      "epicId": 1,
+      "sprintBacklogId": 1,
+      "effort": 5,
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Diseñar formulario de registro",
+          "description": "Crear el diseño del formulario de registro.",
+          "status": "to_do",
+          "estimation": 4,
+          "userStoryId": 1
+        },
+        {
+          "id": 2,
+          "title": "Implementar lógica de registro",
+          "description": "Desarrollar la lógica del backend para el registro de usuarios.",
+          "status": "to_do",
+          "estimation": 6,
+          "userStoryId": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Como usuario, quiero iniciar sesión en la aplicación",
+      "description": "Necesito un formulario de inicio de sesión para acceder a mi cuenta.",
+      "status": "in_progress",
+      "epicId": 1,
+      "sprintBacklogId": 1,
+      "effort": 3,
+      "tasks": [
+        {
+          "id": 3,
+          "title": "Diseñar formulario de inicio de sesión",
+          "description": "Crear el diseño del formulario de inicio de sesión.",
+          "status": "done",
+          "estimation": 3,
+          "userStoryId": 2
+        },
+        {
+          "id": 4,
+          "title": "Implementar lógica de inicio de sesión",
+          "description": "Desarrollar la lógica del backend para la autenticación de usuarios.",
+          "status": "in_progress",
+          "estimation": 5,
+          "userStoryId": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Como usuario, quiero recuperar mi contraseña",
+      "description": "Necesito un sistema para poder recuperar mi contraseña en caso de olvidarla.",
+      "status": "to_do",
+      "epicId": 2,
+      "sprintBacklogId": 2,
+      "effort": 4,
+      "tasks": [
+        {
+          "id": 5,
+          "title": "Diseñar el flujo de recuperación de contraseña",
+          "description": "Crear el diseño y flujo de la funcionalidad de recuperación de contraseña.",
+          "status": "to_do",
+          "estimation": 3,
+          "userStoryId": 3
+        },
+        {
+          "id": 6,
+          "title": "Implementar lógica de recuperación de contraseña",
+          "description": "Desarrollar la lógica del backend para la recuperación de contraseña.",
+          "status": "to_do",
+          "estimation": 4,
+          "userStoryId": 3
+        }
+      ]
+    }
+  ],
+  "epics": [
+    {
+      "id": 1,
+      "title": "Registro e inicio de sesión",
+      "description": "Implementar todas las funcionalidades relacionadas con el registro e inicio de sesión de usuarios.",
+      "status": "in_progress"
+    },
+    {
+      "id": 2,
+      "title": "Integración de funcionalidades avanzadas",
+      "description": "Integrar funciones avanzadas como recuperación de contraseña y autenticación de dos factores.",
+      "status": "to_do"
+    }
+  ],
+  "issues": [
+    {
+      "id": 1,
+      "title": "Error en autenticación de usuarios",
+      "SprintAssociate": "1",
+      "description": "Los usuarios no pueden autenticarse. El servidor devuelve un error 500.",
+      "status": "Abierto",
+      "priority": "Alta",
+      "assignedTo": "Juan Pérez",
+      "madeBy": "Estefano Jaque",
+      "createdIn": "2024-10-12",
+      "resolutionDate": null,
+      "history": [
+        {
+          "id": 1,
+          "date": "2024-10-12",
+          "user": "Maria González",
+          "event": "Creación",
+          "description": "El issue fue creado por Maria González."
+        },
+        {
+          "id": 2,
+          "date": "2024-10-13",
+          "user": "Juan Pérez",
+          "event": "Asignación",
+          "description": "El issue fue asignado a Juan Pérez."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Problema con el despliegue en producción",
+      "SprintAssociate": 2,
+      "description": "El despliegue en el ambiente de producción falla al cargar el frontend.",
+      "status": "En Progreso",
+      "priority": "Media",
+      "assignedTo": "Carla Ruiz",
+      "madeBy": "Estefano Jaque ",
+      "createdIn": "2024-10-10",
+      "resolutionDate": null,
+      "history": [
+        {
+          "id": 1,
+          "date": "2024-10-10",
+          "user": "Carlos López",
+          "event": "Creación",
+          "description": "El issue fue creado por Carlos López."
+        },
+        {
+          "id": 2,
+          "date": "2024-10-11",
+          "user": "Carla Ruiz",
+          "event": "Asignación",
+          "description": "El issue fue asignado a Carla Ruiz."
+        },
+        {
+          "id": 3,
+          "date": "2024-10-12",
+          "user": "Carla Ruiz",
+          "event": "Actualización",
+          "description": "Carla comenzó a trabajar en la corrección del despliegue."
+        }
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "id": 1,
+      "company": "Company A",
+      "position": "Software Developer",
+      "startDate": "2019-01",
+      "endDate": "2021-06",
+      "responsibilities": [
+        "Web application development",
+        "Collaboration in architecture design",
+        "Participation in code reviews"
+      ],
+      "technologies": [
+        "JavaScript",
+        "React",
+        "Node.js"
+      ],
+      "memberId": "1"
+    }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "profile": {
+        "firstName": "Michael",
+        "lastName": "Smith",
+        "address": "456 Oak St",
+        "number": "2B",
+        "city": "Springfield",
+        "postalCode": "98765",
+        "email": "michael.smith@example.com",
+        "country": "USA",
+        "phone": "987-654-3210",
+        "avatar": "https://b2472105.smushcdn.com/2472105/wp-content/uploads/2022/11/Fotografia-de-Retrato-19-1170x1170.jpg?lossy=1&strip=1&webp=1"
+      },
+      "role": {
+        "name": "Developer Team",
+        "description": "A cross-functional group that collaborates to deliver product increments, self-organizing and responsible for quality and estimates."
+      },
+      "availability": {
+        "startSchedule": "09:00",
+        "finalSchedule": "17:00",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ]
+      },
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "profile": {
+        "firstName": "Michael",
+        "lastName": "Smith",
+        "address": "456 Oak St",
+        "number": "2B",
+        "city": "Springfield",
+        "postalCode": "98765",
+        "email": "michael.smith999@example.com",
+        "country": "USA",
+        "phone": "987-654-3210",
+        "avatar": "https://b2472105.smushcdn.com/2472105/wp-content/uploads/2022/11/Fotografia-de-Retrato-19-1170x1170.jpg?lossy=1&strip=1&webp=1"
+      },
+      "role": {
+        "name": "Developer Team",
+        "description": "A cross-functional group that collaborates to deliver product increments, self-organizing and responsible for quality and estimates."
+      },
+      "availability": {
+        "startSchedule": "09:00",
+        "finalSchedule": "17:00",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ]
+      },
+      "status": "Active"
+    }
+  ],
+  "meetings": [
+    {
+      "id": 1,
+      "title": "Sprint Planning Meeting",
+      "date": "2008-10-12T05:00:00.000Z",
+      "time": "7:14 AM",
+      "link": "https://meet.google.com/landing",
+      "recording": {
+        "recordingLink": "https://meet.google.com/recordings/sprint-planning",
+        "duration": "1h 30m",
+        "publicAccess": true
+      },
+      "host": 2,
+      "members": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "access_code": "123456"
+    },
+    {
+      "id": 2,
+      "title": "Retrospective Meeting",
+      "date": "2024-10-15",
+      "time": "2:00 PM",
+      "link": "https://meet.google.com/landing",
+      "recording": {
+        "recordingLink": "https://meet.google.com/recordings/retrospective",
+        "duration": "45m",
+        "publicAccess": true
+      },
+      "host": 1,
+      "members": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "access_code": "654321"
+    }
+  ]
+}
